@@ -12,13 +12,16 @@ export function Experience() {
         <SectionHeading
           eyebrow="Experience"
           title="Career timeline"
-          description="Roles that connect recruiting, aviation service, training, and institutional outreach — without invented metrics."
+          description="Roles that connect recruiting, aviation service, training, and institutional outreach."
           id="experience-heading"
         />
 
-        <ol className="relative space-y-0 border-l-2 border-teal/25 ml-3 sm:ml-4">
+        <ol className="relative ml-3 space-y-0 border-l-2 border-teal/25 sm:ml-4">
           {site.experience.map((job) => (
-            <li key={`${job.company}-${job.role}`} className="relative pb-12 pl-8 last:pb-0 sm:pl-10">
+            <li
+              key={`${job.company}-${job.role}`}
+              className="relative pb-12 pl-8 last:pb-0 sm:pl-10"
+            >
               <span
                 className="absolute -left-[9px] top-1.5 flex h-4 w-4 items-center justify-center rounded-full border-2 border-teal bg-background"
                 aria-hidden="true"
@@ -26,7 +29,7 @@ export function Experience() {
                 <span className="h-1.5 w-1.5 rounded-full bg-teal" />
               </span>
 
-              <article className="rounded-2xl border border-card-border bg-card p-6 shadow-sm transition hover:border-teal/30 sm:p-7">
+              <article className="card-lift rounded-2xl border border-card-border bg-card p-6 shadow-sm hover:border-teal/30 sm:p-7">
                 <div className="flex flex-wrap items-baseline justify-between gap-2 gap-y-1">
                   <h3 className="font-display text-xl font-semibold text-foreground">
                     {job.role}

@@ -15,16 +15,42 @@ const fraunces = Fraunces({
   display: "swap",
 });
 
+const title = `${site.name} | Recruitment & HR`;
+const description =
+  "Sakshi Nandwal — Recruitment & HR professional. Technical recruiting for Big 4 clients, Aviation & Grooming Trainer, Institutional Outreach Manager at mhitr. Based in Indore, India. Open to talent acquisition and people roles.";
+
 export const metadata: Metadata = {
-  title: `${site.name} | Recruitment & HR`,
-  description:
-    "Portfolio of Sakshi Nandwal — Technical Recruiter background, Aviation & Grooming Trainer, Institutional Outreach Manager. Based in Indore. Open to recruitment and HR roles.",
+  title,
+  description,
+  keywords: [
+    "Sakshi Nandwal",
+    "Recruitment",
+    "HR",
+    "Talent Acquisition",
+    "Technical Recruiter",
+    "Indore",
+    "Aviation Trainer",
+    "People Operations",
+  ],
+  authors: [{ name: site.name }],
+  creator: site.name,
   openGraph: {
-    title: `${site.name} | Recruitment & HR`,
+    title,
     description:
-      "People excellence meets structured hiring. Technical recruiting, training, and outreach — Indore, India.",
+      "People excellence meets structured hiring. Technical recruiting, aviation training, and institutional outreach — Indore, India.",
     type: "website",
     locale: "en_IN",
+    siteName: title,
+  },
+  twitter: {
+    card: "summary",
+    title,
+    description:
+      "Recruitment & HR professional — technical recruiting, training, and outreach. Indore, India.",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 

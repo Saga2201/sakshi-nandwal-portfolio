@@ -137,8 +137,9 @@ export const site = {
   contact: {
     heading: "Let’s connect",
     body: "Open to recruitment, talent acquisition, and HR / people-facing roles. Reach out on LinkedIn, or follow along on YouTube and Instagram.",
+    /** Editor note only — not rendered on the site. Set `email` above to show mailto. */
     ctaNote:
-      "Prefer email? Add your address in src/content/site.ts (email field) to enable a mailto button — no placeholder address is shown until then.",
+      "Prefer email? Add your address in the email field above to enable a mailto button.",
   },
 } as const;
 
