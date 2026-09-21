@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { site } from "@/content/site";
 
 const nav = [
+  { href: "#about", label: "About" },
   { href: "#expertise", label: "Expertise" },
   { href: "#experience", label: "Experience" },
   { href: "#strengths", label: "Why Sakshi" },
@@ -36,7 +37,7 @@ export function Header() {
           : "bg-transparent"
       }`}
     >
-      <div className="container-narrow section-pad flex h-16 items-center justify-between sm:h-18">
+      <div className="container-narrow section-pad flex h-16 items-center justify-between sm:h-[4.5rem]">
         <a
           href="#top"
           className="font-display text-lg font-semibold tracking-tight text-foreground focus-ring rounded-sm"
@@ -44,12 +45,12 @@ export function Header() {
           {site.name}
         </a>
 
-        <nav className="hidden items-center gap-1 md:flex" aria-label="Primary">
+        <nav className="hidden items-center gap-0.5 lg:flex" aria-label="Primary">
           {nav.map((item) => (
             <a
               key={item.href}
               href={item.href}
-              className="rounded-full px-3.5 py-2 text-sm font-medium text-muted transition-colors hover:bg-teal-soft hover:text-teal-dark focus-ring"
+              className="rounded-full px-3 py-2 text-sm font-medium text-muted transition-colors hover:bg-teal-soft hover:text-teal-dark focus-ring"
             >
               {item.label}
             </a>
@@ -66,7 +67,7 @@ export function Header() {
 
         <button
           type="button"
-          className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-card-border bg-card text-foreground md:hidden focus-ring"
+          className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-card-border bg-card text-foreground lg:hidden focus-ring"
           aria-expanded={open}
           aria-controls="mobile-nav"
           aria-label={open ? "Close menu" : "Open menu"}
@@ -91,10 +92,10 @@ export function Header() {
         </button>
       </div>
 
-      {open && (
+      {open ? (
         <div
           id="mobile-nav"
-          className="border-t border-card-border bg-background md:hidden"
+          className="border-t border-card-border bg-background lg:hidden"
         >
           <nav
             className="container-narrow section-pad flex flex-col gap-1 py-4"
@@ -104,7 +105,7 @@ export function Header() {
               <a
                 key={item.href}
                 href={item.href}
-                className="rounded-xl px-4 py-3 text-base font-medium text-foreground hover:bg-teal-soft focus-ring"
+                className="rounded-xl px-4 py-3.5 text-base font-medium text-foreground hover:bg-teal-soft focus-ring"
                 onClick={() => setOpen(false)}
               >
                 {item.label}
@@ -114,14 +115,14 @@ export function Header() {
               href={site.links.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-2 rounded-xl bg-teal px-4 py-3 text-center text-base font-semibold text-white hover:bg-teal-dark focus-ring"
+              className="mt-2 rounded-xl bg-teal px-4 py-3.5 text-center text-base font-semibold text-white hover:bg-teal-dark focus-ring"
               onClick={() => setOpen(false)}
             >
               LinkedIn
             </a>
           </nav>
         </div>
-      )}
+      ) : null}
     </header>
   );
 }

@@ -5,7 +5,7 @@ export function Footer() {
 
   return (
     <footer className="mt-auto border-t border-card-border bg-card">
-      <div className="container-narrow section-pad flex flex-col gap-4 py-8 sm:flex-row sm:items-center sm:justify-between">
+      <div className="container-narrow section-pad flex flex-col gap-6 py-10 sm:flex-row sm:items-start sm:justify-between">
         <div>
           <p className="font-display text-base font-semibold text-foreground">
             {site.name}
@@ -13,8 +13,14 @@ export function Footer() {
           <p className="mt-1 text-sm text-muted">
             {site.tagline} · {site.location}
           </p>
+          <p className="mt-4 text-xs text-muted">
+            © {year} {site.name}. All rights reserved.
+          </p>
         </div>
-        <div className="flex flex-wrap gap-4 text-sm">
+        <nav
+          className="flex flex-wrap gap-x-5 gap-y-2 text-sm"
+          aria-label="Social"
+        >
           <a
             href={site.links.linkedin}
             target="_blank"
@@ -39,10 +45,7 @@ export function Footer() {
           >
             Instagram
           </a>
-        </div>
-        <p className="text-xs text-muted sm:text-right">
-          © {year} {site.name}. All rights reserved.
-        </p>
+        </nav>
       </div>
     </footer>
   );

@@ -5,7 +5,7 @@ export function Strengths() {
   return (
     <section
       id="strengths"
-      className="section-pad py-16 sm:py-20 bg-indigo-soft/40"
+      className="section-pad py-16 sm:py-20 bg-indigo-soft/50"
       aria-labelledby="strengths-heading"
     >
       <div className="container-narrow">
@@ -20,7 +20,7 @@ export function Strengths() {
           {site.strengths.map((item, index) => (
             <article
               key={item.title}
-              className="relative overflow-hidden rounded-3xl border border-card-border bg-card p-7 shadow-sm sm:p-8"
+              className="card-lift relative overflow-hidden rounded-3xl border border-card-border bg-card p-7 shadow-sm sm:p-8"
             >
               <span
                 className="pointer-events-none absolute -right-2 -top-4 font-display text-7xl font-semibold text-teal/10"

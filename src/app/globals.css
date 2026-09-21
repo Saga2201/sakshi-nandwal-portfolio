@@ -3,9 +3,9 @@
 :root {
   --background: #f7f5f1;
   --foreground: #1a2332;
-  --muted: #5c6573;
+  --muted: #4a5563;
   --card: #ffffff;
-  --card-border: #e6e1d8;
+  --card-border: #e4dfd6;
   --teal: #0f6b6d;
   --teal-dark: #0a4f51;
   --teal-soft: #e6f3f3;
@@ -96,4 +96,15 @@ body {
 
 .focus-ring {
   @apply outline-none focus-visible:ring-2 focus-visible:ring-teal focus-visible:ring-offset-2 focus-visible:ring-offset-background;
+}
+
+.card-lift {
+  @apply transition duration-300;
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .card-lift:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px -12px rgb(26 35 50 / 0.18);
+  }
 }

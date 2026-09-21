@@ -31,16 +31,16 @@ export function Contact() {
               href={site.links.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full bg-teal px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-teal-dark focus-ring"
+              className="inline-flex min-h-11 items-center gap-2 rounded-full bg-teal px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-teal-dark focus-ring"
             >
-              LinkedIn
+              Connect on LinkedIn
               <span aria-hidden="true">↗</span>
             </a>
             <a
               href={site.links.youtube}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full border border-card-border bg-card px-6 py-3 text-sm font-semibold text-foreground transition hover:bg-warm-soft focus-ring"
+              className="inline-flex min-h-11 items-center gap-2 rounded-full border border-card-border bg-card px-6 py-3 text-sm font-semibold text-foreground transition hover:bg-warm-soft focus-ring"
             >
               YouTube · {site.links.youtubeLabel}
             </a>
@@ -48,29 +48,19 @@ export function Contact() {
               href={site.links.instagram}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full border border-card-border bg-card px-6 py-3 text-sm font-semibold text-foreground transition hover:bg-indigo-soft focus-ring"
+              className="inline-flex min-h-11 items-center gap-2 rounded-full border border-card-border bg-card px-6 py-3 text-sm font-semibold text-foreground transition hover:bg-indigo-soft focus-ring"
             >
               Instagram · {site.links.instagramLabel}
             </a>
             {hasEmail ? (
               <a
                 href={`mailto:${site.email}`}
-                className="inline-flex items-center gap-2 rounded-full border border-teal/30 bg-teal-soft px-6 py-3 text-sm font-semibold text-teal-dark transition hover:bg-teal hover:text-white focus-ring"
+                className="inline-flex min-h-11 items-center gap-2 rounded-full border border-teal/30 bg-teal-soft px-6 py-3 text-sm font-semibold text-teal-dark transition hover:bg-teal hover:text-white focus-ring"
               >
                 Email
               </a>
-            ) : (
-              <span className="inline-flex items-center rounded-full border border-dashed border-card-border bg-background/60 px-5 py-3 text-sm font-medium text-muted">
-                Email coming soon
-              </span>
-            )}
+            ) : null}
           </div>
-
-          {!hasEmail ? (
-            <p className="mt-6 max-w-xl text-sm leading-relaxed text-muted">
-              {site.contact.ctaNote}
-            </p>
-          ) : null}
         </div>
       </div>
     </section>

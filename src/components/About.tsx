@@ -9,7 +9,7 @@ export function About() {
       aria-labelledby="about-heading"
     >
       <div className="container-narrow">
-        <div className="grid gap-10 lg:grid-cols-[1fr_1.15fr] lg:gap-16 lg:items-start">
+        <div className="grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:items-start lg:gap-16">
           <SectionHeading
             eyebrow="About"
             title="A path built around people"
@@ -24,7 +24,7 @@ export function About() {
                 {p}
               </p>
             ))}
-            <p className="border-t border-card-border pt-5 text-sm font-medium text-indigo">
+            <p className="border-t border-card-border pt-5 text-sm font-medium leading-relaxed text-indigo">
               {site.positioning}
             </p>
           </div>
