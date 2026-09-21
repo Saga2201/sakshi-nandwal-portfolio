@@ -26,7 +26,7 @@ export const site = {
   about: {
     paragraphs: [
       "Sakshi combines people excellence with structured hiring. She began as a Technical Recruiter at Sumeru Inc., supporting hiring for Big 4 clients, then built frontline communication and composure as Cabin Crew at IndiGo.",
-      "As an Aviation & Grooming Trainer at Dfly International, she coached aspirants on interviews, SOPs, safety, security, first aid, and professional grooming. She most recently served as Institutional Outreach Manager at mhitr (ended Sep 2026).",
+      "As an Aviation & Grooming Trainer at Dfly International, she coached aspirants on interviews, SOPs, safety, security, first aid, and professional grooming. She most recently served as Institutional Outreach Manager at mhitr (Jul 2025 – Sep 2026).",
       "She is seeking recruitment and HR roles where candidate experience, stakeholder trust, and disciplined talent acquisition matter.",
     ],
   },
@@ -74,7 +74,7 @@ export const site = {
     {
       role: "Institutional Outreach Manager",
       company: "mhitr",
-      period: "Until Sep 2026",
+      period: "Jul 2025 – Sep 2026",
       location: "India",
       bullets: [
         "Institutional outreach and partnership engagement",
