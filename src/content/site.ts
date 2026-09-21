@@ -10,7 +10,7 @@ export const site = {
   headline:
     "People excellence meets structured hiring — from Big 4 technical recruiting to aviation training and institutional outreach.",
   positioning:
-    "Former Cabin Crew with the mindset of a Technical Recruiter. Aviation & Grooming Trainer. Institutional Outreach Manager at mhitr. Actively pursuing opportunities in recruitment and HR.",
+    "Former Cabin Crew with the mindset of a Technical Recruiter. Aviation & Grooming Trainer. Former Institutional Outreach Manager at mhitr. Actively pursuing opportunities in recruitment and HR.",
 
   /** Add your email when ready — leave empty to hide the mailto button */
   email: "" as string,
@@ -26,7 +26,7 @@ export const site = {
   about: {
     paragraphs: [
       "Sakshi combines people excellence with structured hiring. She began as a Technical Recruiter at Sumeru Inc., supporting hiring for Big 4 clients, then built frontline communication and composure as Cabin Crew at IndiGo.",
-      "As an Aviation & Grooming Trainer at Dfly International, she coached aspirants on interviews, SOPs, safety, security, first aid, and professional grooming. She currently works in institutional outreach at mhitr.",
+      "As an Aviation & Grooming Trainer at Dfly International, she coached aspirants on interviews, SOPs, safety, security, first aid, and professional grooming. She most recently served as Institutional Outreach Manager at mhitr (ended Sep 2026).",
       "She is seeking recruitment and HR roles where candidate experience, stakeholder trust, and disciplined talent acquisition matter.",
     ],
   },
@@ -46,7 +46,7 @@ export const site = {
     {
       title: "Stakeholder & Client Coordination",
       description:
-        "Partnered with hiring managers and enterprise accounts; now driving institutional and partnership outreach.",
+        "Partnered with hiring managers and enterprise accounts; experience driving institutional and partnership outreach.",
     },
     {
       title: "People Development & Professional Grooming",
@@ -56,7 +56,7 @@ export const site = {
     {
       title: "Institutional & Partnership Outreach",
       description:
-        "Building relationships with external stakeholders and institutions as Outreach Manager at mhitr.",
+        "Built relationships with external stakeholders and institutions as Outreach Manager at mhitr.",
     },
     {
       title: "Communication, Empathy & Service Excellence",
@@ -74,7 +74,7 @@ export const site = {
     {
       role: "Institutional Outreach Manager",
       company: "mhitr",
-      period: "Current",
+      period: "Until Sep 2026",
       location: "India",
       bullets: [
         "Institutional outreach and partnership engagement",
@@ -130,7 +130,7 @@ export const site = {
     },
     {
       title: "Outreach that builds partnerships",
-      body: "Current institutional outreach at mhitr sharpens relationship management and external engagement — transferable to campus, vendor, and hiring-partner work.",
+      body: "Institutional outreach at mhitr sharpened relationship management and external engagement — transferable to campus, vendor, and hiring-partner work.",
     },
   ],
 

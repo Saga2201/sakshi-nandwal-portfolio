@@ -17,7 +17,7 @@ const fraunces = Fraunces({
 
 const title = `${site.name} | Recruitment & HR`;
 const description =
-  "Sakshi Nandwal — Recruitment & HR professional. Technical recruiting for Big 4 clients, Aviation & Grooming Trainer, Institutional Outreach Manager at mhitr. Based in Indore, India. Open to talent acquisition and people roles.";
+  "Sakshi Nandwal — Recruitment & HR professional. Technical recruiting for Big 4 clients, Aviation & Grooming Trainer, former Institutional Outreach Manager at mhitr. Based in Indore, India. Open to talent acquisition and people roles.";
 
 export const metadata: Metadata = {
   title,
